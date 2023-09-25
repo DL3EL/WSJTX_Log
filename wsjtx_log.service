@@ -1,0 +1,10 @@
+[Unit]
+Description=WSJTX CloudLog
+After=network.target
+
+[Service]
+ExecStart=/opt/wsjtx_log/wsjtx_log.pl
+User=wsjtxlog
+
+[Install]
+WantedBy=multi-user.target
